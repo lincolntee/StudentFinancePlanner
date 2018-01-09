@@ -7,19 +7,26 @@
     tools:context="lincolntee.studentfinance.InformationActivity">
 
     <TextView
-        android:id="@+id/editTextViewName"
+        android:id="@+id/textViewName"
         android:layout_width="wrap_content"
         android:layout_height="16dp"
-        android:text="@string/textViewName"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="40dp" />
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/textViewName" />
 
-    <TextView
-        android:id="@+id/editTextViewName"
-        android:layout_width="101dp"
+    <Button
+        android:id="@+id/buttonUpdate"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="name"
-        tools:layout_editor_absoluteX="150dp"
-        tools:layout_editor_absoluteY="40dp" />
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Button"
+        android:onClick="updateProfile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="@string/buttonUpdate" />
 
 </android.support.constraint.ConstraintLayout>

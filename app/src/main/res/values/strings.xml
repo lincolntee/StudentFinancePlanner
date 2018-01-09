@@ -9,7 +9,6 @@
     <string name="buttonLoan">Loan</string>
     <string name="buttonLivingExpenses">Living Expenses</string>
 
-
     <!--Profile Activity String Values -->
     <string name="textViewProfile">Profile Information</string>
     <string name="textViewName">Name : </string>
