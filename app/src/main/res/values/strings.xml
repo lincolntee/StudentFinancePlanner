@@ -1,6 +1,6 @@
 <resources>
 
-    <string name="app_name"></string>
+    <string name="app_name">Student Finance Planner</string>
 
     <string name="textViewTitle">Welcome to Student Finance Planner</string>
 
@@ -26,6 +26,13 @@
 
 
     <!--Loan Activity String Values-->
+    <string name="textViewLoanAmount">Loan Amount</string>
+    <string name="textViewLoanDuration">Loan Duration</string>
+    <string name="textViewPaymentDueDate">Payment Due Date</string>
+    <string name="iconLoanType">Loan Type</string>
+    <string name="iconLoanDuration">Loan Duration</string>
+    <string name="iconPaymentDueDate">Payment Due Date</string>
+    <string name="iconBackButton">Back Button</string>
     <!--Living Expenses Activity String Values-->
     <!-- Strings related to Settings -->
 

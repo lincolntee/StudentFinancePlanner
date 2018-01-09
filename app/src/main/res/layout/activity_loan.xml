@@ -6,4 +6,85 @@
     android:layout_height="match_parent"
     tools:context="lincolntee.studentfinance.LoanActivity">
 
+    <ImageView
+        android:id="@+id/imageViewLoanType"
+        android:layout_width="84dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="88dp"
+        android:contentDescription="@string/iconLoanType"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_account_balance_blue_24dp" />
+
+    <TextView
+        android:id="@+id/textViewLoanAmount"
+        android:layout_width="243dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="108dp"
+        android:text="@string/textViewLoanAmount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewLoanType"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewDuration"
+        android:layout_width="84dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="@string/iconLoanDuration"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewLoanType"
+        app:srcCompat="@drawable/ic_timeline_blue_24dp" />
+
+    <TextView
+        android:id="@+id/textViewLoanDuration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/textViewLoanDuration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewDuration"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLoanAmount" />
+
+    <ImageView
+        android:id="@+id/imageViewPaymentDueDate"
+        android:layout_width="82dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="@string/iconPaymentDueDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewDuration"
+        app:srcCompat="@drawable/ic_timer_off_red_24dp" />
+
+    <TextView
+        android:id="@+id/textViewPaymentDueDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/textViewPaymentDueDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPaymentDueDate"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLoanDuration" />
+
+    <ImageButton
+        android:id="@+id/imageButtonBack"
+        android:layout_width="96dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:contentDescription="@string/iconBackButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_arrow_back_white_24dp" />
 </android.support.constraint.ConstraintLayout>
