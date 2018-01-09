@@ -76,15 +76,16 @@
         app:layout_constraintStart_toEndOf="@+id/imageViewPaymentDueDate"
         app:layout_constraintTop_toBottomOf="@+id/textViewLoanDuration" />
 
-    <ImageButton
-        android:id="@+id/imageButtonBack"
-        android:layout_width="96dp"
-        android:layout_height="51dp"
+    <Button
+        android:id="@+id/buttonBack_LA"
+        android:layout_width="111dp"
+        android:layout_height="62dp"
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
         android:backgroundTint="@color/colorPrimary"
-        android:contentDescription="@string/iconBackButton"
+        android:text="@string/buttonBack_LA"
+        android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/ic_arrow_back_white_24dp" />
+        app:layout_constraintStart_toStartOf="parent" />
+
 </android.support.constraint.ConstraintLayout>

@@ -33,7 +33,35 @@
     <string name="iconLoanDuration">Loan Duration</string>
     <string name="iconPaymentDueDate">Payment Due Date</string>
     <string name="iconBackButton">Back Button</string>
+
+
     <!--Living Expenses Activity String Values-->
+    <string name="textViewExpense">Expenses</string>
+    <string name="textViewExpenseValue">0.00</string>
+    <string name="editTextExpenseValue">0.00</string>
+
+    <string name="textViewIncome">Income</string>
+    <string name="textViewIncomeValue">0.00</string>
+    <string name="editTextIncomeValue">0.00</string>
+
+    <string name="textViewBalance">Balance</string>
+    <string name="textViewBalanceValue">0.00</string>
+
+    <string name="editTextItemPrice"></string>
+    <string name="editTextItemName"></string>
+    <string name="editTextItemPrice2"></string>
+    <string name="editTextItemName2"></string>
+    <string name="editTextItemPrice3"></string>
+    <string name="editTextItemName3"></string>
+    <string name="editTextItemPrice4"></string>
+    <string name="editTextItemName4"></string>
+    <string name="editTextItemPrice5"></string>
+    <string name="editTextItemName5"></string>
+
+    <string name="imageButtonAdd"></string>
+    <string name="buttonCalculate">Calculate</string>
+    <string name="buttonBack_LEA">Back</string>
+    <string name="buttonBack_LA">Back</string>
     <!-- Strings related to Settings -->
 
     <!-- Example General settings -->
