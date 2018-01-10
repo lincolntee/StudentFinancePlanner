@@ -37,6 +37,11 @@ public class LivingExpensesActivity extends MainActivity{
         double price4 = Double.valueOf(editTextItemPrice4.getText().toString());
 
         expense = expense + price + price1 + price2 + price3+ price4;
+        if(expense >income)
+        {
+            new AlertDialog.Builder(LivingExpensesActivity.this).setTitle("Budget Reminder").setMessage("Over Budget").setNeutralButton("ok",null)
+                    .setIcon(android.R.drawable.stat_sys_warning).show();
+        }
         double balance = income - expense;
         textViewBalance.setText("" + balance);
         textViewExpenseValue.setText("" + expense);
@@ -65,26 +70,7 @@ public class LivingExpensesActivity extends MainActivity{
             @Override
             public void onClick(View view)
             {
-                //if(expense > income == true) {
-                    AlertDialog.Builder builder = new AlertDialog.Builder(LivingExpensesActivity.this);
-                    builder.setCancelable(true);
-                    builder.setTitle("Budget Reminder");
-                    builder.setMessage("You spend over budget!");
-                    builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialogInterface, int i) {
-                            dialogInterface.cancel();
-                        }
-                    });
-                    builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialogInterface, int i) {
-                        }
-                    });
-                    builder.show();
-                //}
-                //else
-                calculateBalance();
+                    calculateBalance();
             }
         });
         buttonBack.setOnClickListener(new View.OnClickListener(){

@@ -9,30 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".MainActivity"
-            android:label = "Main Menu"
-            >
-
+        <activity
+            android:name=".MainActivity"
+            android:label="Main Menu">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ProfileActivity"
-            android:label = "Profile Information"
-            />
-
-        <activity android:name=".LoanActivity"
-            android:label = "Loan Information"/>
-
-        <activity android:name=".LivingExpensesActivity"
-            android:label = "Living Expenses Information"/>
-
-        <activity android:name=".InformationActivity"
-            android:label = "Information"
-            ></activity>
+        <activity
+            android:name=".LoanActivity"
+            android:label="Loan Information" />
+        <activity
+            android:name=".LivingExpensesActivity"
+            android:label="Living Expenses Information" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".UpdateProfileActivity"></activity>
     </application>
 
 </manifest>

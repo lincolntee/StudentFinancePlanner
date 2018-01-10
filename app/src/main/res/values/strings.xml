@@ -17,12 +17,13 @@
     <string name="textViewBirthDate">Birth Date : </string>
     <string name="textViewYearIntake">Year Intake : </string>
     <string name="textViewEmail">Email : </string>
-    <string name="buttonUpdate">Update</string>
     <string name="buttonReset">Reset</string>
-<!--!-->
-    <!--Information Activity String Values -->
-
-
+    <string name="buttonUpdateProfile">Update Profile</string>
+    <!--!-->
+    <!--UpdateProfileActivity String Values -->
+    <string name="buttonUpdate">Update</string>
+    <string name="editTextStudentID"></string>
+    <string name="editTextEmail"></string>
 
 
     <!--Loan Activity String Values-->
@@ -33,7 +34,10 @@
     <string name="iconLoanDuration">Loan Duration</string>
     <string name="iconPaymentDueDate">Payment Due Date</string>
     <string name="iconBackButton">Back Button</string>
-
+    <string name="textViewIcNumber">IC Number:</string>
+    <string name="editTextIcNumber"></string>
+    <string name="editTextYearIntake"></string>
+    <string name="buttonUpdateLoanInformation">Update Loan</string>
 
     <!--Living Expenses Activity String Values-->
     <string name="textViewExpense">Expenses</string>

@@ -16,13 +16,17 @@ public class MainActivity extends AppCompatActivity {
     public void openProfile(View view)
     {
         // Open profile activity
-        Intent intent = new Intent(this, InformationActivity.class);
+        Intent intent = new Intent(this, ProfileActivity.class);
         startActivity(intent);
     }
 
     public void exitApplication(View view)
     {
         // Exit Application
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.addCategory(Intent.CATEGORY_HOME);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
     }
     public void viewLoan(View view)
     {
