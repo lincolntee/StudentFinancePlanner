@@ -47,16 +47,16 @@
     <string name="textViewBalance">Balance</string>
     <string name="textViewBalanceValue">0.00</string>
 
-    <string name="editTextItemPrice"></string>
+    <string name="editTextItemPrice">0.00</string>
     <string name="editTextItemName"></string>
-    <string name="editTextItemPrice2"></string>
+    <string name="editTextItemPrice1">0.00</string>
+    <string name="editTextItemName1"></string>
+    <string name="editTextItemPrice2">0.00</string>
     <string name="editTextItemName2"></string>
-    <string name="editTextItemPrice3"></string>
+    <string name="editTextItemPrice3">0.00</string>
     <string name="editTextItemName3"></string>
-    <string name="editTextItemPrice4"></string>
+    <string name="editTextItemPrice4">0.00</string>
     <string name="editTextItemName4"></string>
-    <string name="editTextItemPrice5"></string>
-    <string name="editTextItemName5"></string>
 
     <string name="imageButtonAdd"></string>
     <string name="buttonCalculate">Calculate</string>

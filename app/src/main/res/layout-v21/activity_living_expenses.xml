@@ -69,16 +69,18 @@
     </TableRow>
 
     <LinearLayout
-        android:layout_width="353dp"
-        android:layout_height="487dp"
-        android:layout_marginBottom="8dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="16dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.238">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -123,8 +125,9 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:id="@+id/Row0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:baselineAligned="false"
             android:orientation="horizontal">
 
@@ -148,6 +151,126 @@
                 android:inputType="number"
                 android:labelFor="@+id/editTextItemPrice"
                 android:text="@string/editTextItemPrice" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Row1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextItemName1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="text|textAutoCorrect|textAutoComplete"
+                android:labelFor="@+id/editTextItemName1"
+                android:text="@string/editTextItemName1" />
+
+            <EditText
+                android:id="@+id/editTextItemPrice1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+                android:labelFor="@+id/editTextItemPrice1"
+                android:text="@string/editTextItemPrice1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Row2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextItemName2"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="text|textAutoCorrect|textAutoComplete"
+                android:labelFor="@+id/editTextItemName2"
+                android:text="@string/editTextItemName2" />
+
+            <EditText
+                android:id="@+id/editTextItemPrice2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+                android:labelFor="@+id/editTextItemPrice2"
+                android:text="@string/editTextItemPrice2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Row3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextItemName3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="text|textAutoCorrect|textAutoComplete"
+                android:labelFor="@+id/editTextItemName3"
+                android:text="@string/editTextItemName3" />
+
+            <EditText
+                android:id="@+id/editTextItemPrice3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+                android:labelFor="@+id/editTextItemPrice3"
+                android:text="@string/editTextItemPrice3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Row4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextItemName4"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="text|textAutoCorrect|textAutoComplete"
+                android:labelFor="@+id/editTextItemName4"
+                android:text="@string/editTextItemName4" />
+
+            <EditText
+                android:id="@+id/editTextItemPrice4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+                android:labelFor="@+id/editTextItemPrice4"
+                android:text="@string/editTextItemPrice4" />
 
         </LinearLayout>
 
