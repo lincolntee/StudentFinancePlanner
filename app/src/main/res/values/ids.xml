@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="editTextIcNumber" type="id">editTextIcNumber</item>
+    <item name="editTextYearIntake" type="id">editTextYearIntake</item>
+</resources>

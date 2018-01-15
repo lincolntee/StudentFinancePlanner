@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="lincolntee.studentfinance.UpdateProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <EditText
+            android:id="@+id/editTextYearIntake"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editTextIcNumber"
+            android:layout_marginTop="19dp"
+            android:ems="10"
+            android:hint="Year Intake"
+            android:inputType="numberSigned"
+            android:text="@string/editTextYearIntake"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/editTextIcNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editTextStudentID"
+            android:layout_marginTop="21dp"
+            android:ems="10"
+            android:hint="IC Number"
+            android:inputType="numberSigned"
+            android:text="@string/editTextIcNumber"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/editTextStudentID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editTextEmail"
+            android:layout_below="@+id/editTextEmail"
+            android:layout_marginTop="27dp"
+            android:ems="10"
+            android:hint="Student ID"
+            android:inputType="textEmailAddress"
+            android:text="@string/editTextStudentID"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editTextName"
+            android:layout_below="@+id/editTextName"
+            android:layout_marginTop="27dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:text="@string/editTextEmail"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="22dp"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:text="@string/editTextItemName"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/buttonUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="?attr/colorPrimary"
+            android:text="@string/buttonUpdate"
+            android:textColor="@android:color/background_light" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
