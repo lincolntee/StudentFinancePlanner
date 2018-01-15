@@ -25,7 +25,7 @@
     <string name="editTextStudentID"></string>
     <string name="editTextEmail"></string>
     <!--UpdateLoanActivity -->
-    <string name="buttonUpdateLoanBack_LA"></string>
+    <string name="buttonUpdateLoanBack_LA">Back</string>
 
     <!--Loan Activity String Values-->
     <string name="textViewLoanAmount">Loan Amount</string>
