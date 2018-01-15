@@ -48,7 +48,9 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentEnd="true"
+            android:backgroundTint="?attr/colorPrimary"
             android:text="@string/buttonUpdateProfile"
+            android:textColor="@android:color/background_light"
             tools:layout_editor_absoluteX="213dp"
             tools:layout_editor_absoluteY="428dp" />
 

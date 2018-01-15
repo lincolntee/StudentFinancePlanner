@@ -8,33 +8,40 @@
 
     <ImageView
         android:id="@+id/imageViewLoanType"
-        android:layout_width="84dp"
-        android:layout_height="71dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="88dp"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="52dp"
         android:contentDescription="@string/iconLoanType"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_account_balance_blue_24dp" />
 
+
     <TextView
         android:id="@+id/textViewLoanAmount"
         android:layout_width="243dp"
         android:layout_height="33dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="108dp"
+        android:layout_marginTop="8dp"
+        android:labelFor="@+id/editTextLoanAmount"
         android:text="@string/textViewLoanAmount"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.724"
         app:layout_constraintStart_toEndOf="@+id/imageViewLoanType"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06" />
 
     <ImageView
         android:id="@+id/imageViewDuration"
-        android:layout_width="84dp"
-        android:layout_height="59dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="12dp"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="88dp"
         android:contentDescription="@string/iconLoanDuration"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageViewLoanType"
@@ -46,18 +53,20 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="188dp"
         android:text="@string/textViewLoanDuration"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageViewDuration"
-        app:layout_constraintTop_toBottomOf="@+id/textViewLoanAmount" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageViewPaymentDueDate"
-        android:layout_width="82dp"
-        android:layout_height="61dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="12dp"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="84dp"
         android:contentDescription="@string/iconPaymentDueDate"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageViewDuration"
@@ -67,14 +76,17 @@
         android:id="@+id/textViewPaymentDueDate"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="8dp"
         android:text="@string/textViewPaymentDueDate"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageViewPaymentDueDate"
-        app:layout_constraintTop_toBottomOf="@+id/textViewLoanDuration" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.714" />
 
     <Button
         android:id="@+id/buttonBack_LA"

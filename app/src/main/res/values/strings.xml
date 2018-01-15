@@ -24,7 +24,8 @@
     <string name="buttonUpdate">Update</string>
     <string name="editTextStudentID"></string>
     <string name="editTextEmail"></string>
-
+    <!--UpdateLoanActivity -->
+    <string name="buttonUpdateLoanBack_LA"></string>
 
     <!--Loan Activity String Values-->
     <string name="textViewLoanAmount">Loan Amount</string>
@@ -38,6 +39,12 @@
     <string name="editTextIcNumber"></string>
     <string name="editTextYearIntake"></string>
     <string name="buttonUpdateLoanInformation">Update Loan</string>
+
+    <!--Loan Information-->
+
+    <string name="editTextLoanAmount">0.00</string>
+    <string name="editTextLoanDuration"></string>
+    <string name="editTextPaymentDueDate"></string>
 
     <!--Living Expenses Activity String Values-->
     <string name="textViewExpense">Expenses</string>

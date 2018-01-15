@@ -25,7 +25,8 @@
             android:name=".LivingExpensesActivity"
             android:label="Living Expenses Information" />
         <activity android:name=".ProfileActivity" />
-        <activity android:name=".UpdateProfileActivity"></activity>
+        <activity android:name=".UpdateProfileActivity" />
+        <activity android:name=".UpdateLoanActivity"></activity>
     </application>
 
 </manifest>

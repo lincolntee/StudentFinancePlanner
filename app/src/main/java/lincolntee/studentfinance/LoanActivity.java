@@ -13,7 +13,7 @@ public class LoanActivity extends MainActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_loan);
         Button buttonBack = (Button) findViewById((R.id.buttonBack_LA)); //return to main menu
-
+        Button buttonUpdateLoanInformation = (Button) findViewById(R.id.buttonUpdateLoanInformation);
 
         buttonBack.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view)
@@ -21,6 +21,14 @@ public class LoanActivity extends MainActivity {
             // Return to main activity
             Intent intent = new Intent(LoanActivity.this, MainActivity.class);
             startActivity(intent);
+            }
+        });
+        buttonUpdateLoanInformation.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View view)
+            {
+                // Return to main activity
+                Intent intent = new Intent(LoanActivity.this, UpdateLoanActivity.class);
+                startActivity(intent);
             }
         });
     }
