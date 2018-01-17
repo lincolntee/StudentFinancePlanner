@@ -10,8 +10,8 @@
         android:id="@+id/imageViewLoanType"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
         android:contentDescription="@string/iconLoanType"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -31,17 +31,17 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.724"
+        app:layout_constraintHorizontal_bias="0.644"
         app:layout_constraintStart_toEndOf="@+id/imageViewLoanType"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.06" />
+        app:layout_constraintVertical_bias="0.101" />
 
     <ImageView
         android:id="@+id/imageViewDuration"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
         android:contentDescription="@string/iconLoanDuration"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageViewLoanType"
@@ -49,24 +49,24 @@
 
     <TextView
         android:id="@+id/textViewLoanDuration"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="188dp"
+        android:layout_marginTop="4dp"
         android:text="@string/textViewLoanDuration"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.21"
         app:layout_constraintStart_toEndOf="@+id/imageViewDuration"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextLoanAmount" />
 
     <ImageView
         android:id="@+id/imageViewPaymentDueDate"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
         android:contentDescription="@string/iconPaymentDueDate"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageViewDuration"
@@ -84,9 +84,10 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageViewPaymentDueDate"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.714" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextLoanDuration"
+        app:layout_constraintVertical_bias="0.03" />
 
     <Button
         android:id="@+id/buttonUpdateLoanBack_LA"
@@ -114,7 +115,7 @@
 
     <EditText
         android:id="@+id/editTextLoanAmount"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -125,10 +126,10 @@
         android:text="@string/editTextLoanAmount"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.328"
         app:layout_constraintStart_toEndOf="@+id/imageViewLoanType"
         app:layout_constraintTop_toBottomOf="@+id/textViewLoanAmount"
-        app:layout_constraintVertical_bias="0.01" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/editTextLoanDuration"
@@ -144,10 +145,10 @@
         android:text="@string/editTextLoanDuration"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintHorizontal_bias="0.328"
         app:layout_constraintStart_toEndOf="@+id/imageViewDuration"
         app:layout_constraintTop_toBottomOf="@+id/textViewLoanDuration"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.007" />
 
     <EditText
         android:id="@+id/editTextPaymentDueDate"
@@ -155,12 +156,13 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="Due Date"
         android:inputType="date"
         android:text="@string/editTextPaymentDueDate"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.232"
         app:layout_constraintStart_toEndOf="@+id/imageViewPaymentDueDate"
         app:layout_constraintTop_toBottomOf="@+id/textViewPaymentDueDate" />
 

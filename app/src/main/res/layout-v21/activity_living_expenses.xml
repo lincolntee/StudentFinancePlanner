@@ -131,16 +131,11 @@
             android:baselineAligned="false"
             android:orientation="horizontal">
 
-            <EditText
-                android:id="@+id/editTextItemName"
-
-                android:layout_width="wrap_content"
+            <Spinner
+                android:id="@+id/spinnerCategory0"
+                android:layout_width="213dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:inputType="text|textAutoCorrect|textAutoComplete"
-                android:labelFor="@+id/editTextItemName"
-                android:text="@string/editTextItemName" />
+                android:layout_weight="1" />
 
             <EditText
                 android:id="@+id/editTextItemPrice"
@@ -161,15 +156,11 @@
             android:baselineAligned="false"
             android:orientation="horizontal">
 
-            <EditText
-                android:id="@+id/editTextItemName1"
-                android:layout_width="wrap_content"
+            <Spinner
+                android:id="@+id/spinnerCategory1"
+                android:layout_width="213dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:inputType="text|textAutoCorrect|textAutoComplete"
-                android:labelFor="@+id/editTextItemName1"
-                android:text="@string/editTextItemName1" />
+                android:layout_weight="1" />
 
             <EditText
                 android:id="@+id/editTextItemPrice1"
@@ -190,16 +181,11 @@
             android:baselineAligned="false"
             android:orientation="horizontal">
 
-            <EditText
-                android:id="@+id/editTextItemName2"
-
-                android:layout_width="wrap_content"
+            <Spinner
+                android:id="@+id/spinnerCategory2"
+                android:layout_width="213dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:inputType="text|textAutoCorrect|textAutoComplete"
-                android:labelFor="@+id/editTextItemName2"
-                android:text="@string/editTextItemName2" />
+                android:layout_weight="1" />
 
             <EditText
                 android:id="@+id/editTextItemPrice2"
@@ -221,15 +207,11 @@
             android:baselineAligned="false"
             android:orientation="horizontal">
 
-            <EditText
-                android:id="@+id/editTextItemName3"
-                android:layout_width="wrap_content"
+            <Spinner
+                android:id="@+id/spinnerCategory3"
+                android:layout_width="213dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:inputType="text|textAutoCorrect|textAutoComplete"
-                android:labelFor="@+id/editTextItemName3"
-                android:text="@string/editTextItemName3" />
+                android:layout_weight="1" />
 
             <EditText
                 android:id="@+id/editTextItemPrice3"
@@ -251,16 +233,11 @@
             android:baselineAligned="false"
             android:orientation="horizontal">
 
-            <EditText
-                android:id="@+id/editTextItemName4"
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:inputType="text|textAutoCorrect|textAutoComplete"
-                android:labelFor="@+id/editTextItemName4"
-                android:text="@string/editTextItemName4" />
+            <Spinner
+                android:id="@+id/spinnerCategory4"
+                android:layout_width="213dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
 
             <EditText
                 android:id="@+id/editTextItemPrice4"
@@ -272,6 +249,27 @@
                 android:labelFor="@+id/editTextItemPrice4"
                 android:text="@string/editTextItemPrice4" />
 
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinnerCategory5"
+                android:layout_width="213dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/editTextItemPrice5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+                android:text="@string/editTextItemPrice5" />
         </LinearLayout>
 
     </LinearLayout>

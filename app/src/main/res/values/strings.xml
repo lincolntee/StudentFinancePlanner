@@ -70,7 +70,24 @@
     <string name="editTextItemName3"></string>
     <string name="editTextItemPrice4">0.00</string>
     <string name="editTextItemName4"></string>
+    <string name="spinnerCategory0">Listing</string>
+    <string name="spinnerCategory1">Listing</string>
+    <string name="spinnerCategory2">Listing</string>
+    <string name="spinnerCategory3">Listing</string>
+    <string name="spinnerCategory4">Listing</string>
+    <string name="spinnerCategory5">Listing</string>
+    <string name="editTextItemPrice5">0.00</string>
 
+    <string-array name="Category">
+        <item>Food</item>
+        <item>Utility</item>
+        <item>Hobby</item>
+        <item>Entertainment</item>
+        <item>Clothes</item>
+        <item>Semester Fees</item>
+        <item>Rentals</item>
+        <item>Others</item>
+    </string-array>
     <string name="imageButtonAdd"></string>
     <string name="buttonCalculate">Calculate</string>
     <string name="buttonBack_LEA">Back</string>
