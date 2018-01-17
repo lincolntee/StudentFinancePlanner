@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -29,7 +30,6 @@ public class LivingExpensesActivity extends MainActivity{
     private TextView textViewExpenseValue;
     private double expense, income;
 
-
     private void calculateBalance()
     {
         income = Double.valueOf(editTextIncome.getText().toString());
@@ -47,6 +47,8 @@ public class LivingExpensesActivity extends MainActivity{
         {
             new AlertDialog.Builder(LivingExpensesActivity.this).setTitle("Budget Reminder").setMessage("Over Budget").setNeutralButton("ok",null)
                     .setIcon(android.R.drawable.stat_sys_warning).show();
+            final MediaPlayer mp = MediaPlayer.create(this,R.raw.alert);
+            mp.start();
         }
         double balance = income - expense;
         textViewBalance.setText("" + balance);
@@ -57,6 +59,7 @@ public class LivingExpensesActivity extends MainActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_living_expenses);
+        final MediaPlayer mp = MediaPlayer.create(this,R.raw.button);
 
         editTextIncome = (EditText) findViewById(R.id.editTextIncomeValue); //get Income Value
         editTextItemName = (EditText) findViewById(R.id.editTextItemName); //get Item Name
@@ -116,6 +119,7 @@ public class LivingExpensesActivity extends MainActivity{
             public void onClick(View view)
             {
                     calculateBalance();
+                    mp.start();
             }
         });
         buttonBack.setOnClickListener(new View.OnClickListener(){
@@ -125,6 +129,7 @@ public class LivingExpensesActivity extends MainActivity{
                 // Return to main activity
                 Intent intent = new Intent(LivingExpensesActivity.this, MainActivity.class);
                 startActivity(intent);
+                mp.start();
             }
         });
     }

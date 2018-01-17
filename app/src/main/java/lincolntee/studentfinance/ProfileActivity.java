@@ -1,6 +1,7 @@
 package lincolntee.studentfinance;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -16,6 +17,7 @@ public class ProfileActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        final MediaPlayer mp = MediaPlayer.create(this,R.raw.button);
 
         setContentView(R.layout.activity_profile);
         Button buttonUpdateProfile = (Button) findViewById((R.id.buttonUpdateProfile)); //return to main menu
@@ -39,6 +41,7 @@ public class ProfileActivity extends AppCompatActivity {
                 // Return to main activity
                 Intent intent = new Intent(ProfileActivity.this, UpdateProfileActivity.class);
                 startActivity(intent);
+                mp.start();
             }
         });
     }

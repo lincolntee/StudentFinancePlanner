@@ -1,6 +1,7 @@
 package lincolntee.studentfinance;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -17,6 +18,7 @@ public class UpdateLoanActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update_loan);
+        final MediaPlayer mp = MediaPlayer.create(this,R.raw.button);
         editTextLoanAmount = (EditText)findViewById(R.id.editTextLoanAmount);
         editTextLoanDuration = (EditText)findViewById(R.id.editTextLoanDuration);
         editTextPaymentDueDate = (EditText)findViewById(R.id.editTextPaymentDueDate);
@@ -28,6 +30,7 @@ public class UpdateLoanActivity extends AppCompatActivity {
                 // Return to main activity
                 Intent intent = new Intent(UpdateLoanActivity.this, LoanActivity.class);
                 startActivity(intent);
+                mp.start();
             }
         });
         buttonUpdateLoan.setOnClickListener(new View.OnClickListener()
@@ -43,6 +46,7 @@ public class UpdateLoanActivity extends AppCompatActivity {
               intent.putExtra("LOANDURATION", loanDuration);
               intent.putExtra("PAYMENTDUEDATE",paymentDueDate);
               startActivity(intent);
+              mp.start();
           }
 
         });

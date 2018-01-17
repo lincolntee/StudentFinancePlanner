@@ -6,6 +6,7 @@ import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
+import android.media.MediaPlayer;
 import android.os.Build;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -34,6 +35,7 @@ public class UpdateProfileActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update_profile);
+        final MediaPlayer mp = MediaPlayer.create(this,R.raw.button);
 
         editTextName = findViewById(R.id.editTextName);
         editTextEmail = findViewById(R.id.editTextEmail);
@@ -86,6 +88,7 @@ public class UpdateProfileActivity extends AppCompatActivity {
                 intent.putExtra("ICNUMBER", icNumber);
                 intent.putExtra("YEARINTAKE", yearIntake);
                 startActivity(intent);
+
             }
 
         });
