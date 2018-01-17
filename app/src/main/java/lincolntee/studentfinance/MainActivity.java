@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         final MediaPlayer mp = MediaPlayer.create(this,R.raw.piano);
         mp.start();
-
     }
 
     public void openProfile(View view)
